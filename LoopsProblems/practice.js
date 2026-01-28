@@ -1,4 +1,4 @@
-// Find the largest element in the Array
+// Find the largest element in the Array.
 
 let arr = [-2, 4, 2, 9, 45, 28, -3, -5];
 
