@@ -43,3 +43,34 @@ function findSecondLargest(arr) {
 
     return secondLargest;
 }
+
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// Pattern
+
+for (let i = 0; i < 5; i++) {
+    let row = "";
+    for (let j = 0; j <= i; j++) {
+        row = row + "* "
+    }
+    console.log(row)
+}
+
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+// Pattern
+
+for (let i = 5; i > 0; i--) {
+    let row = "";
+    for (let j = 0; j < i; j++) {
+        row = row + "* "
+    }
+    console.log(row)
+}
