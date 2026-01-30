@@ -74,3 +74,18 @@ for (let i = 5; i > 0; i--) {
     }
     console.log(row)
 }
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+//pattern
+
+for (let i = 0; i < 5; i++) {
+    let row = "";
+    for (let j = 0; j <= i; j++) {
+        row = row + (j+1)
+    }
+    console.log(row)
+}
