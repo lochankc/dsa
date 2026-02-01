@@ -134,3 +134,24 @@ for (let i = 0; i < n; i++) {
     }
     console.log(row)
 }
+
+// 1
+// 10
+// 101
+// 1010
+// 10101
+
+for (let i = 0; i < 5; i++) {
+    let row = "";
+    let print = 1;
+    for (let j = 0; j <= i; j++) {
+        if (print === 1) {
+            row = row + print;
+            print = 0
+        } else {
+            row = row + print;
+            print = 1
+        }
+    } 
+    console.log(row)
+}
