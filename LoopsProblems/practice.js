@@ -155,3 +155,24 @@ for (let i = 0; i < 5; i++) {
     } 
     console.log(row)
 }
+
+// 1
+// 01
+// 010
+// 1010
+// 10101
+
+let print = 1;
+for (let i = 0; i < 5; i++) {
+    let row = "";
+    for (let j = 0; j <= i; j++) {
+        if (print === 1) {
+            row = row + print;
+            print = 0
+        } else {
+            row = row + print;
+            print = 1
+        }
+    } 
+    console.log(row)
+}
