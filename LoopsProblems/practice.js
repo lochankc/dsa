@@ -192,3 +192,24 @@ function countDigit(n) {
 }
 
 console.log(countDigit(259))
+
+// isPalindrome or not, here the input value is integer
+
+function isPalindrome(x) {
+    let rev = 0;
+    let val = x;
+
+    if (x < 0) {
+        return false;
+    }
+
+    while (val > 0) {
+        const last = val % 10;
+        rev = rev * 10 + last;
+        val = Math.floor(val / 10);
+    }
+
+    return rev === x
+}
+
+console.log(isPalindrome(121))
