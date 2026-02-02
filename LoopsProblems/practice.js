@@ -176,3 +176,19 @@ for (let i = 0; i < 5; i++) {
     } 
     console.log(row)
 }
+
+// countDigit: it is basically a number
+// n is 259 and count is 3
+function countDigit(n) {
+    let count = 0;
+    let val = n;
+
+    while (val > 0) {
+        val = Math.floor(val / 10);
+        count++;
+    }
+
+    return count;
+}
+
+console.log(countDigit(259))
