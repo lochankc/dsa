@@ -213,3 +213,18 @@ function isPalindrome(x) {
 }
 
 console.log(isPalindrome(121))
+
+// reverse an integer
+
+function reverseInteger(n) {
+    let val = Math.abs(n);
+    let rev = 0;
+    while (val > 0) {
+        const last = val % 10;
+        rev = rev * 10 + last
+        val = Math.floor(val / 10);
+    }
+    return n < 0 ? -rev : rev;
+}
+
+console.log(reverseInteger(123))
