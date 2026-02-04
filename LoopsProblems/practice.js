@@ -228,3 +228,20 @@ function reverseInteger(n) {
 }
 
 console.log(reverseInteger(123))
+
+// remove duplicates
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+function removeDuplicate(nums) {
+    let x = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > nums[x]) {
+            x = x + 1;
+            nums[x] = nums[i]
+        }
+    }
+
+    return x + 1;
+}
+// input values
+// let nums = [0,0,1,1,1,2,2,3,3,4]
+console.log(removeDuplicate(nums))
