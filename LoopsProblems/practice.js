@@ -260,7 +260,7 @@ function removeElement(nums, val) {
 
     return x;
 }
-// Input valur
+// Input value
 // let nums = [0,1,2,2,3,0,4,2]
 
 console.log(removeElement(nums, 2))
