@@ -245,3 +245,22 @@ function removeDuplicate(nums) {
 // input values
 // let nums = [0,0,1,1,1,2,2,3,3,4]
 console.log(removeDuplicate(nums))
+
+// Remove element
+// https://leetcode.com/problems/remove-element/description/
+function removeElement(nums, val) {
+    let x = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== val) {
+            nums[x] = nums[i];
+            x = x + 1;
+        }
+    }
+
+    return x;
+}
+// Input valur
+// let nums = [0,1,2,2,3,0,4,2]
+
+console.log(removeElement(nums, 2))
