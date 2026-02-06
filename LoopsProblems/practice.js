@@ -264,3 +264,13 @@ function removeElement(nums, val) {
 // let nums = [0,1,2,2,3,0,4,2]
 
 console.log(removeElement(nums, 2))
+
+// factorial of a number using the recursion 
+
+function factorial(n) {
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return n * factorial(n-1)
+}
+
+console.log(factorial(4))
