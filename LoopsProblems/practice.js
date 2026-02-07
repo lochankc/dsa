@@ -274,3 +274,21 @@ function factorial(n) {
 }
 
 console.log(factorial(4))
+
+// Reverse String
+// https://leetcode.com/problems/reverse-string/description/
+function reverseString(s) {
+    let start = 0;
+    let end = s.length - 1;
+
+    while (start < end) {
+        [s[start], s[end]] = [s[end], s[start]];
+        start++;
+        end--;
+    }
+
+    return s;
+}
+// Input Value
+// let s = ["h", "e", "l", "l", "o"];
+console.log(reverseString(s))
