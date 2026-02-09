@@ -1,3 +1,5 @@
+// Only LeetCode problems.
+
 // remove duplicates
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 function removeDuplicate(nums) {
